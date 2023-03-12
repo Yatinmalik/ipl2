@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>IPL 2023 Player Profiles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    #player-profile {
+      margin-top: 50px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #player-profile img {
+      max-width: 150px;
+      border-radius: 50%;
+    }
+
+    #generate-btn {
+      font-size: 20px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #generate-btn:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <h1>IPL 2023 Player Profiles</h1>
+  <div id="player-profile">
+    <img id="player-img" src="" alt="Player Image">
+    <h2 id="player-name"></h2>
+    <p id="player-team"></p>
+    <p id="player-role"></p>
+    <p id="player-age"></p>
+  </div>
+  <button id="generate-btn" onclick="generateProfile()">Generate Player Profile</button>
+
+  <script>
+    const players = [
+      {
+        name: "Virat Kohli",
+        team: "Royal Challengers Bangalore",
+        role: "Batsman",
+        age: 34,
+        img: "https://www.iplt20.com//resources/v4.9.1/i/team-bgs/3198-bg.jpg"
+      },
+      {
+        name: "Rohit Sharma",
+        team: "Mumbai Indians",
+        role: "Batsman",
+        age: 35,
+        img: "https://www.iplt20.com//resources/v4.9.1/i/team-bgs/265-bg.jpg"
+      },
+      {
+        name: "KL Rahul",
+        team: "Punjab Kings",
+        role: "Batsman",
+        age: 29,
+        img: "https://www.iplt20.com//resources/v4.9.1/i/team-bgs/1084-bg.jpg"
+      },
+      {
+        name: "MS Dhoni",
+        team: "Chennai Super Kings",
+        role: "Wicket-Keeper Batsman",
+        age: 41,
+        img: "https://www.iplt20.com//resources/v4.9.1/i/team-bgs/285-bg.jpg"
+      },
+      {
+        name: "Rishabh Pant",
+        team: "Delhi Capitals",
+        role: "Wicket-Keeper Batsman",
+        age: 24,
+        img: "https://www.iplt20.com//resources/v4.9.1/i/team-bgs/170-bg.jpg"
+      },
+      {
+        name: "Jasprit Bumrah",
+        team: "Mumbai Indians",
+        role: "Bowler",
+        age: 28,
+        img: "https://www.iplt20.com//resources/v4.9.1/i/team-bgs/1086-bg.jpg"
+      },
+     
